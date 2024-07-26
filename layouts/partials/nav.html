@@ -1,0 +1,9 @@
+<ul>
+  <li><a href="{{ "" | relURL }}">Home</a></li>
+  {{ range .Site.Menus.main }}
+  <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+  {{ end }}
+  {{ with .Site.GetPage "/blog" }}
+  <li><a href="{{ "blog" | relURL }}">All Blog Entries</a></li>
+  {{ end }}
+</ul>

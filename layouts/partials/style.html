@@ -1097,4 +1097,48 @@ aside h1, aside h2, aside h3, aside h4 {
     content: counter(sidenote-counter) " ";
     top: -0.5rem;
 }
+
+.related-posts ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.related-posts li {
+  width: 10%;
+  list-style-type: none;
+  margin: 0 0.5rem;
+}
+
+.related-posts li:first-child {
+  width: 45%;
+  text-align: right;
+  margin-left: 1.6rem 0;
+}
+
+.related-posts li:first-child h2, .related-posts li:first-child h3 {
+  text-align: left;
+}
+
+.related-posts li:last-child {
+  width: 45%;
+  text-align: left;
+  margin-right: 1.6rem 0;
+}
+
+.related-posts li:last-child h2, .related-posts li:last-child h3 {
+  text-align: right;
+}
+
+separator {
+  display: block;
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+  font-family: "Noto Sans Symbols 2", sans-serif;
+}
+
+.rotate-90 {
+  transform: rotate(90deg) translateX(18rem);
+}
 </style>

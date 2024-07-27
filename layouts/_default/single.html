@@ -17,4 +17,30 @@
   <a href="{{ .Permalink }}">#{{ .LinkTitle }}</a>
   {{ end }}
 </p>
+
+<separator >🙞           🙜</separator>
+
+<div class="related-posts">
+  <ul>
+    <li>
+      <h2>Next Post</h2>
+      {{ $next := .Next }}
+      {{ with $next }}
+      <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+      <p>{{ .Summary }}</p>
+      {{ end }}
+    </li>
+    <li>
+      <separator class='rotate-90'>🙞           🙜</separator>
+    </li>
+    <li>
+      <h2>Previous Post</h2>
+      {{ $prev := .Prev }}
+      {{ with $prev }}
+      <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+      <p>{{ .Summary }}</p>
+      {{ end }}
+    </li>
+  </ul>
+</footer>
 {{ end }}

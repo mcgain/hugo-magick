@@ -693,6 +693,16 @@ figure pre {
     text-align: left;
 }
 
+/*
+    1) Don't align game content left
+    2) Thin border to delineate content
+*/
+figure.game {
+  text-align: left; /* 1 */
+  border: solid 1px rgb(255 255 255 / 0.6); /* 2 */
+  padding: 1rem;
+}
+
 /* Set the typography for the figure captions */
 figcaption {
     margin: 0.8rem 0;
@@ -950,8 +960,8 @@ blockquote {
 */
 blockquote p {
     font-family: "Spectral", serif; /* 1 */
-    font-style: italic; /* 1 */
-    font-size: 2.1rem; /* 1 */
+    /* font-style: italic; /* 1 */
+    /* font-size: 2.1rem; /* 1 */
     font-weight: 300; /* 1 */
     line-height: 2.4rem; /* 1 */
     margin: 2.1rem 0; /* 2 */
